@@ -1,0 +1,29 @@
+interface MyInterface
+{
+public static final int x = 5;
+public abstract void display();
+}
+interface MyInterface1 extends MyInterface
+{
+public static final int y=10;
+public abstract void display1();
+}
+class InterfaceDemo implements MyInterface1,MyInterface
+{
+public void display()
+{
+System.out.println("welcome to");
+}
+public void display1()
+{
+Stem.out.println("lendi college");
+}
+public static void main(String args[])
+{
+InterfaceDemo id=new InterfaceDemo();
+id.display();
+System.out.println(x);
+id.display1();
+System.out.println(y);
+}
+}
